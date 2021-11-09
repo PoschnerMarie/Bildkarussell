@@ -6,8 +6,7 @@
       <button (click)="onNext()">Next Image</button>
     </div>
     <div>
-      <input type="text" name="NewUrl" placeholder="Url" id="NewUrl">
-      <button (click)="addImage()">Add Image</button>
+      <input type="text" placeholder="Url" (input)="addUrl($event)">
     </div>
     <div>
       <p *ngFor="let url of Bilder">{{url}}</p>
