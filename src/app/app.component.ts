@@ -20,12 +20,11 @@ export class AppComponent {
   }
 
   addUrl(event: Event){
-    console.log(event);
     const url = (<HTMLInputElement>event.target).value;
     if(url.endsWith(".jpg")){
       this.Bilder.push(url);
     }else{
-
+      console.log("Bitte gültige Url angeben")
     }
   }
 }
